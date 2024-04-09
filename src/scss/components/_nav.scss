@@ -1,0 +1,114 @@
+// nav {
+//     background-color: red;
+//     display: flex;
+//     flex-direction: column;
+//     width: fit-content;
+//     position: fixed;
+//     right: 0;
+//     top: 0;
+//     height: fit-content;
+
+
+//     .btn-hamburger {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//     }
+
+//     .dropdown-menu {
+//         position: relative;
+//         margin: 0;
+//         margin-top: 7em;
+//         padding: 0;
+//         display: flex;
+//         justify-content: space-evenly;
+//         height: 100%;
+//         flex-direction: column;
+//         transition: .5s;
+//         background-color: yellow;
+//         height: 50vh;
+
+
+//         li {
+
+//             list-style: none;
+//             text-align: right;
+//             display: flex;
+//             background-color: aqua;
+//             justify-content: center;
+//             align-items: center;
+//             margin: .2em;
+
+//             a {
+//                 display: flex;
+//                 align-items: center;
+//                 color: black;
+//                 text-decoration: none;
+//                 width: 100%;
+//                 height: 100%;
+//                 padding: 1em;
+
+//                 transition: .5s;
+
+//                 &:hover {
+//                     background-color: blue;
+//                 }
+//             }
+
+//         }
+
+//     }
+// }
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: fit-content;
+
+    .btn-hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        margin: 0;
+        margin-top: 7em;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        flex-direction: column;
+        transition: .5s;
+        height: 50vh;
+
+        li {
+            list-style: none;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .2em;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: black;
+                text-decoration: none;
+                padding: 1em;
+                flex: 1;
+                transition: .5s;
+                background-color: white;
+
+                &:hover {
+                    background-color: blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.icon-hamburger {
+    transition: .2s ease-out;
+
+
+    &.open {
+        transition: transform .3s ease-out;
+        transform: rotate(180deg);
+    }
+
+    .burger-piece {
+        background-color: black;
+        position: absolute;
+        transition: .2s;
+        width: 15%;
+        border-radius: 50%;
+        height: 15%;
+    }
+
+    .burger-top {
+        top: 10%;
+    }
+
+    .burger-middle {}
+
+    .burger-bottom {
+        bottom: 10%;
+    }
+
+
+    &.open {
+
+        .burger-top,
+        .burger-bottom {
+            border-radius: 20px;
+            height: 100%;
+            transform: translateX(-500%) rotate(45deg);
+        }
+
+        .burger-top {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .burger-middle {}
+
+        .burger-bottom {
+            bottom: 0;
+            transform: rotate(-45deg);
+        }
+
+    }
+
+}

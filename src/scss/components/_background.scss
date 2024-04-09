@@ -1,0 +1,152 @@
+// @import "../theme/colors";
+
+// .background {
+//     position: fixed;
+//     width: 100vw;
+//     height: 100vh;
+//     z-index: -1;
+//     display: flex;
+
+//     .square {
+//         height: 100px;
+//         width: 100px;
+//         position: absolute;
+
+//     }
+
+//     .square-1 {
+//         animation: rotate 300s linear infinite;
+//         background-color: map-get(map-get($colors, primary), base);
+//         height: 2000px;
+//         width: 2000px;
+//         top: -80em;
+//         left: -80em;
+//     }
+
+//     .square-2 {
+//         animation: rotate 200s reverse infinite;
+//         background-color: map-get(map-get($colors, secondary), base);
+//         height: 1500px;
+//         width: 1500px;
+//         top: -70em;
+//         right: -40em;
+//     }
+
+//     .square-3 {
+//         animation: rotate 150s linear infinite;
+//         background-color: map-get(map-get($colors, secondary), base);
+//         height: 1000px;
+//         width: 1000px;
+//         bottom: -20em;
+//         left: -40em;
+//     }
+
+//     .square-4 {
+//         animation: rotate 130s linear infinite;
+//         background-color: map-get(map-get($colors, secondary), base);
+//         height: 1000px;
+//         width: 1000px;
+//         bottom: -40em;
+//         right: -40em;
+//     }
+
+//     .square-5 {
+//         animation: rotate 300s reverse infinite;
+//         background-color: map-get(map-get($colors, primary), base);
+//         height: 1000px;
+//         width: 1000px;
+//         bottom: -40em;
+
+//     }
+
+//     @keyframes rotate {
+//         from {
+//             transform: rotate(0deg);
+//         }
+
+//         to {
+//             transform: rotate(360deg);
+//         }
+
+//     }
+// }
+
+@import "../theme/colors";
+
+body {
+    background-color: #baff94;
+}
+
+.background {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    max-width: 1500px;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .square {
+        position: absolute;
+    }
+
+    .square-1 {
+        animation: rotate 600s linear infinite;
+        rotate: 45deg;
+        background-color: rgb(0, 127, 0);
+        height: 2000px;
+        width: 2000px;
+        top: -80em;
+        left: -80em;
+    }
+
+    .square-2 {
+        animation: rotate 550s reverse infinite;
+        background-color: rgb(0, 69, 0);
+        height: 1500px;
+        width: 1500px;
+        top: -50em;
+        right: -40em;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .square-3 {
+        animation: rotate 450s linear infinite;
+        background-color: rgb(0, 87, 0);
+        height: 1200px;
+        width: 1200px;
+        bottom: -20em;
+        left: -40em;
+    }
+
+    .square-4 {
+        animation: rotate 530s linear infinite;
+        background-color: rgb(0, 87, 0);
+        height: 1500px;
+        width: 1500px;
+        rotate: 45deg;
+        right: -80em;
+    }
+
+    .square-5 {
+        animation: rotate 520s reverse infinite;
+        background-color: rgb(0, 87, 0);
+        height: 1500px;
+        width: 100vw;
+        bottom: -80em;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
