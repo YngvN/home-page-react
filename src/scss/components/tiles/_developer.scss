@@ -1,0 +1,30 @@
+@import "../../theme/colors";
+
+.developer-posts {
+    .project-container {
+
+        .project-description {
+            align-items: center;
+        }
+
+        .project-text,
+        .project-image-container {
+            box-sizing: border-box;
+        }
+
+        .project-title {}
+
+        .project-content {}
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: .2s;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

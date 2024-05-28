@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { baseURL } from '../../utility/actions/wp/wp.url';
-import DeveloperPosts from '../../utility/actions/renders/developerPosts';
-import { Post } from '../../utility/actions/types';
-
-const Developer: React.FC = () => {
+import { baseURL } from './wp.url';
+import { Post } from '../types';
+import DeveloperPosts from '../renders/developerPosts';
+import MusicPosts from '../renders/musicPosts';
+const FetchPosts: React.FC<{ categoryFilter: (categories: number[]) => boolean, type: 'developer' | 'music' }> = ({ categoryFilter, type }) => {
     const [posts, setPosts] = useState<Post[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -48,16 +48,14 @@ const Developer: React.FC = () => {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
-    const developerPosts = posts.filter(post => post.categories.includes(4));
+    const filteredPosts = posts.filter(post => categoryFilter(post.categories));
 
     return (
         <div>
-            <h1>Developer</h1>
-            <div className='developer'>
-                <DeveloperPosts posts={developerPosts} />
-            </div>
+            {type === 'developer' && <DeveloperPosts posts={filteredPosts} />}
+            {type === 'music' && <MusicPosts posts={filteredPosts} />}
         </div>
     );
 };
 
-export default Developer;
+export default FetchPosts;

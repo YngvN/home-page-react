@@ -1,0 +1,16 @@
+@import "./developer";
+@import "./music";
+
+.project-container {
+    align-items: center;
+    border-radius: 30px;
+    background: $color-1;
+    transition: transform 0.2s;
+    padding: 1em;
+    align-items: center;
+
+    button {
+        width: 50%;
+        margin: 1em;
+    }
+}

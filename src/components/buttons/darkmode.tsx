@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDarkModePreference } from "../../utility/actions/darkmode.action";
-
 function BtnDarkmode() {
     const [isDark, toggleDarkMode] = useDarkModePreference();
 
+    useEffect(() => {
+        if (isDark) {
+            document.body.classList.add("dark");
+            document.body.classList.remove("light");
+        } else {
+            document.body.classList.add("light");
+            document.body.classList.remove("dark");
+        }
+    }, [isDark]);
+
     return (
-        <div
+        <button
             className={`icon-darkmode icon-container ${isDark ? "dark" : "light"}`}
-            onClick={() => toggleDarkMode()}
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark mode"
         >
             <span className="top-left light-ray"></span>
             <span className="top-middle light-ray"></span>
@@ -19,7 +29,7 @@ function BtnDarkmode() {
             <span className="center-right light-ray"></span>
             <span className="sun"></span>
             <span className="moon"></span>
-        </div>
+        </button>
     );
 }
 
