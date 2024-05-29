@@ -17,7 +17,7 @@ function Home() {
                     <div className="column child">
                         <h2>Hi there!</h2>
                         <p>My name is Yngve Nykås. I'm a musician and programeer living in Oslo, Norway.</p>
-                        <p>My style is to just try something and see if it's cool, and sometimes it actually works</p>
+                        <p>My style is to just try something and see if it's cool, and sometimes it actually works. Sometimes</p>
 
                     </div>
                     <div className="row social-links child">
