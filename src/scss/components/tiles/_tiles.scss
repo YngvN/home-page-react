@@ -1,16 +1,66 @@
 @import "./developer";
 @import "./music";
+@import "../../theme/colors";
+@import "../tiles/person";
 
 .project-container {
+    display: flex;
     align-items: center;
-    border-radius: 30px;
-    background: $color-1;
-    transition: transform 0.2s;
+    flex-direction: row;
     padding: 1em;
-    align-items: center;
+    border-bottom: 2px solid #80808082;
+    transition: background-color 0.2s, color 0.2s;
 
-    button {
-        width: 50%;
-        margin: 1em;
+
+
+    .project-description {}
+
+    .project-title {
+        margin-bottom: 1em;
     }
+
+    .project-content {
+        margin-bottom: 1em;
+    }
+
+    .project-child {
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 756px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+}
+
+.container {
+    padding: 1em;
+
+    .child {
+        padding: 1em;
+    }
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+
+    .child {
+        z-index: 7;
+    }
+}
+
+.person-container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 6em;
+    height: 6em;
 }

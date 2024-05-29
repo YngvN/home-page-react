@@ -1,83 +1,7 @@
-// @import "../theme/colors";
-
-// .background {
-//     position: fixed;
-//     width: 100vw;
-//     height: 100vh;
-//     z-index: -1;
-//     display: flex;
-
-//     .square {
-//         height: 100px;
-//         width: 100px;
-//         position: absolute;
-
-//     }
-
-//     .square-1 {
-//         animation: rotate 300s linear infinite;
-//         background-color: map-get(map-get($colors, primary), base);
-//         height: 2000px;
-//         width: 2000px;
-//         top: -80em;
-//         left: -80em;
-//     }
-
-//     .square-2 {
-//         animation: rotate 200s reverse infinite;
-//         background-color: map-get(map-get($colors, secondary), base);
-//         height: 1500px;
-//         width: 1500px;
-//         top: -70em;
-//         right: -40em;
-//     }
-
-//     .square-3 {
-//         animation: rotate 150s linear infinite;
-//         background-color: map-get(map-get($colors, secondary), base);
-//         height: 1000px;
-//         width: 1000px;
-//         bottom: -20em;
-//         left: -40em;
-//     }
-
-//     .square-4 {
-//         animation: rotate 130s linear infinite;
-//         background-color: map-get(map-get($colors, secondary), base);
-//         height: 1000px;
-//         width: 1000px;
-//         bottom: -40em;
-//         right: -40em;
-//     }
-
-//     .square-5 {
-//         animation: rotate 300s reverse infinite;
-//         background-color: map-get(map-get($colors, primary), base);
-//         height: 1000px;
-//         width: 1000px;
-//         bottom: -40em;
-
-//     }
-
-//     @keyframes rotate {
-//         from {
-//             transform: rotate(0deg);
-//         }
-
-//         to {
-//             transform: rotate(360deg);
-//         }
-
-//     }
-// }
-
 @import "../theme/colors";
 
-body {
-    background-color: $color-1;
-}
-
 .background {
+    z-index: -2;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -97,7 +21,6 @@ body {
     .square-1 {
         animation: rotate 600s linear infinite;
         rotate: 45deg;
-        background-color: $color-2;
         height: 2000px;
         width: 2000px;
         top: -80em;
@@ -106,7 +29,6 @@ body {
 
     .square-2 {
         animation: rotate 550s reverse infinite;
-        background-color: $color-1;
         height: 1500px;
         width: 1500px;
         top: -50em;
@@ -116,7 +38,6 @@ body {
 
     .square-3 {
         animation: rotate 450s linear infinite;
-        background-color: $color-2;
         height: 1200px;
         width: 1200px;
         bottom: -20em;
@@ -125,7 +46,6 @@ body {
 
     .square-4 {
         animation: rotate 530s linear infinite;
-        background-color: $color-2;
         height: 1500px;
         width: 1500px;
         rotate: 45deg;
@@ -134,7 +54,6 @@ body {
 
     .square-5 {
         animation: rotate 520s reverse infinite;
-        background-color: $color-1;
         height: 1500px;
         width: 100vw;
         bottom: -80em;

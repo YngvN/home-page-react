@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDarkModePreference } from "../../utility/actions/darkmode.action";
+
 function BtnDarkmode() {
     const [isDark, toggleDarkMode] = useDarkModePreference();
 
@@ -14,21 +15,23 @@ function BtnDarkmode() {
     }, [isDark]);
 
     return (
-        <button
-            className={`icon-darkmode icon-container ${isDark ? "dark" : "light"}`}
-            onClick={toggleDarkMode}
-            aria-label="Toggle dark mode"
-        >
-            <span className="top-left light-ray"></span>
-            <span className="top-middle light-ray"></span>
-            <span className="top-right light-ray"></span>
-            <span className="bottom-left light-ray"></span>
-            <span className="bottom-middle light-ray"></span>
-            <span className="bottom-right light-ray"></span>
-            <span className="center-left light-ray"></span>
-            <span className="center-right light-ray"></span>
-            <span className="sun"></span>
-            <span className="moon"></span>
+        <button className="btn-darkmode color-bg">
+            <div
+                className={`icon-darkmode icon-container ${isDark ? "dark" : "light"}`}
+                onClick={toggleDarkMode}
+                aria-label="Toggle dark mode"
+            >
+                <span className="top-left light-ray"></span>
+                <span className="top-middle light-ray"></span>
+                <span className="top-right light-ray"></span>
+                <span className="bottom-left light-ray"></span>
+                <span className="bottom-middle light-ray"></span>
+                <span className="bottom-right light-ray"></span>
+                <span className="center-left light-ray"></span>
+                <span className="center-right light-ray"></span>
+                <span className="sun"></span>
+                <span className="moon"></span>
+            </div>
         </button>
     );
 }

@@ -1,73 +1,11 @@
-// nav {
-//     background-color: red;
-//     display: flex;
-//     flex-direction: column;
-//     width: fit-content;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//     height: fit-content;
-
-
-//     .btn-hamburger {
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//     }
-
-//     .dropdown-menu {
-//         position: relative;
-//         margin: 0;
-//         margin-top: 7em;
-//         padding: 0;
-//         display: flex;
-//         justify-content: space-evenly;
-//         height: 100%;
-//         flex-direction: column;
-//         transition: .5s;
-//         background-color: yellow;
-//         height: 50vh;
-
-
-//         li {
-
-//             list-style: none;
-//             text-align: right;
-//             display: flex;
-//             background-color: aqua;
-//             justify-content: center;
-//             align-items: center;
-//             margin: .2em;
-
-//             a {
-//                 display: flex;
-//                 align-items: center;
-//                 color: black;
-//                 text-decoration: none;
-//                 width: 100%;
-//                 height: 100%;
-//                 padding: 1em;
-
-//                 transition: .5s;
-
-//                 &:hover {
-//                     background-color: blue;
-//                 }
-//             }
-
-//         }
-
-//     }
-// }
-
 nav {
     display: flex;
     flex-direction: column;
-    width: fit-content;
     position: fixed;
     right: 0;
     top: 0;
     height: fit-content;
+    z-index: 10;
 
     .btn-hamburger {
         position: absolute;
@@ -75,40 +13,87 @@ nav {
         right: 0;
     }
 
+
+
+
+
     .dropdown-menu {
-        position: relative;
-        margin: 0;
-        margin-top: 7em;
-        padding: 0;
         display: flex;
-        justify-content: space-evenly;
-        height: 100%;
-        flex-direction: column;
-        transition: .5s;
-        height: 50vh;
 
         li {
+            transition: .2s;
             list-style: none;
-            text-align: right;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: .2em;
 
             a {
                 display: flex;
-                align-items: center;
-                color: black;
-                text-decoration: none;
-                padding: 1em;
-                flex: 1;
-                transition: .5s;
-                background-color: white;
+                width: 100%;
+                height: 100%;
+                transition: .2s;
+            }
+        }
 
-                &:hover {
-                    background-color: blue;
+        .active {
+            background-color: $secondary-color;
+        }
+    }
+
+    @media (min-width: 756px) {
+        .dropdown.open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 4em;
+
+            .dropdown-menu {
+                right: 0;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+
+                li {
+                    width: 30%;
+                    padding: .5em;
+                    margin: .2em;
+
+                    a {
+                        padding: .5em;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    @media (max-width: 756px) {
+        .dropdown.open {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .dropdown-menu {
+            justify-content: space-around;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin: 0;
+            margin-top: 5em;
+            padding: 0;
+
+
+            li {
+                padding: 1em;
+                width: 50%;
+                margin-bottom: 10%;
+
+                a {
+                    padding: 1em;
                 }
             }
         }
     }
+
 }

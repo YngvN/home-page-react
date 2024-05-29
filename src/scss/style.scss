@@ -2,16 +2,20 @@
 @import "./sections/sections";
 @import "./components/components";
 
-.row {
+.row,
+.column {
     display: flex;
+}
+
+.row {
     flex-direction: row;
 }
 
 .column {
-    display: flex;
     flex-direction: column;
 }
 
+
 .split {
-    width: 50%;
+    min-width: 50%;
 }

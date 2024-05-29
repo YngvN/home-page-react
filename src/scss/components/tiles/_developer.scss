@@ -1,29 +1,40 @@
 @import "../../theme/colors";
 
 .developer-posts {
+
     .project-container {
+        .project-child {
 
-        .project-description {
-            align-items: center;
+            min-width: 50%;
+
         }
 
-        .project-text,
-        .project-image-container {
-            box-sizing: border-box;
-        }
+        .developer-links {
+            display: flex;
+            min-width: 200px;
+            border-radius: 20px;
+            overflow: hidden;
 
-        .project-title {}
+            .project-image {
+                width: 80%;
+                height: 100%;
+                transition: 0.2s;
+                object-fit: contain;
+                z-index: 1;
 
-        .project-content {}
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
 
-        .project-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: .2s;
+            .btn-github {
+                display: flex;
+                margin: 0;
+                width: 20%;
+                justify-content: center;
+                align-items: center;
+                transition: .2s;
 
-            &:hover {
-                transform: scale(1.02);
             }
         }
     }

@@ -6,6 +6,7 @@ interface HamburgerProps {
 
 function Hamburger({ isOpen }: HamburgerProps) {
     return (
+
         <div className={`icon-hamburger icon-container ${isOpen ? "open" : ""}`}>
             <span className="burger-top burger-piece"></span>
             <span className="burger-middle burger-piece"></span>

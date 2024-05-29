@@ -28,27 +28,27 @@ const MusicPosts: React.FC<MusicPostsProps> = ({ posts }) => {
     };
 
     return (
-        <div className="posts-container column">
+        <div className="music-posts column">
             {posts.map((post) => {
                 const filteredContent = filterContent(post.content.rendered);
                 return (
-                    <div key={post.id} className="project-container column">
-                        <div className="row">
-                            <div className="split project-description column">
-                                <h2 className="project-title">{post.title.rendered}</h2>
-                                <div className="project-content" dangerouslySetInnerHTML={{ __html: filteredContent }} />
-                            </div>
-                            <div className="split project-image-container">
-                                {post.featured_image && (
-                                    <img
-                                        src={post.featured_image}
-                                        alt={post.title.rendered}
-                                        className="project-image"
-                                    />
-                                )}
-                            </div>
+                    <div key={post.id} className="project-container">
+
+                        <div className="project-description project-child column">
+                            <h2 className="project-title">{post.title.rendered}</h2>
+                            <div className="project-content" dangerouslySetInnerHTML={{ __html: filteredContent }} />
+                        </div>
+                        <div className="project-image-container  project-child">
+                            {post.featured_image && (
+                                <img
+                                    src={post.featured_image}
+                                    alt={post.title.rendered}
+                                    className="project-image"
+                                />
+                            )}
                         </div>
                     </div>
+
                 );
             })}
         </div>

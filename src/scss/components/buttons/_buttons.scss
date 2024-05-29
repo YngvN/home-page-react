@@ -2,14 +2,37 @@
 @import "./darkmode";
 @import "src/scss/theme/_colors.scss";
 
-button {
+
+.btn-hamburger,
+.btn-darkmode {
+    z-index: 11;
     overflow: hidden;
     border: none;
     border-radius: 5px;
     padding: .5em
 }
 
+a {
+    cursor: pointer;
+}
 
+nav {
+    a {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform .5s;
+
+        &:hover {}
+    }
+}
+
+.btn {
+    display: flex;
+    padding: 1em;
+    transition: .2s;
+}
 
 .icon-container {
     position: relative;
@@ -20,5 +43,17 @@ button {
     height: 100%;
 }
 
-.btn-hamburger,
-.btn-darkmode {}
+.btn-linkedin,
+.btn-github {
+    margin: 1em;
+
+    svg {
+        transition: .2s;
+    }
+
+    &:hover {
+        svg {
+            transform: translateY(-10%);
+        }
+    }
+}

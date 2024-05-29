@@ -52,10 +52,8 @@ const Developer: React.FC = () => {
 
     return (
         <div>
-            <h1>Developer</h1>
-            <div className='developer'>
-                <DeveloperPosts posts={developerPosts} />
-            </div>
+            <h1 className='page-title'>Developer</h1>
+            <DeveloperPosts posts={developerPosts} />
         </div>
     );
 };

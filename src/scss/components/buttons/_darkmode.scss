@@ -2,7 +2,7 @@
 
     .light-ray,
     .sun {
-        background-color: black;
+        // background-color: black;
         position: absolute;
     }
 
@@ -100,7 +100,7 @@
 
         .light-ray,
         .sun {
-            background-color: white;
+            // background-color: white;
             position: absolute;
         }
 
@@ -116,11 +116,11 @@
         }
 
         .sun {
+
             animation: changeSize .3s ease forwards;
         }
 
         .moon {
-            background-color: black;
             animation: moveToLeft .5s ease forwards;
         }
     }
@@ -129,7 +129,7 @@
 
         .light-ray,
         .sun {
-            background-color: black;
+            // background-color: black;
             position: absolute;
         }
 

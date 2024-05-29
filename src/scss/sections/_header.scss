@@ -1,7 +1,6 @@
 @import "../theme/colors";
 
 header {
-    // background-color: blue;
     height: 8em;
 }
 
@@ -10,4 +9,14 @@ header {
     height: 50px;
     width: 50px;
     margin: 1em;
+    background-color: transparent;
+    transition: .2s;
+
+    &:hover {
+        padding: 5px;
+    }
+}
+
+.btn-darkmode {
+    position: fixed;
 }

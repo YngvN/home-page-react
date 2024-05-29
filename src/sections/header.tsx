@@ -6,9 +6,7 @@ export function Header() {
 
     return (
         <header>
-            <button className="btn-darkmode">
-                <BtnDarkmode />
-            </button>
+            <BtnDarkmode />
             <Nav />
         </header>
     );
