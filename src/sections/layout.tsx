@@ -5,7 +5,11 @@ import { Footer } from "./footer";
 import { Background } from "../components/background";
 
 
+
+
 export function Layout() {
+
+
     return (
         <div>
             <Background />

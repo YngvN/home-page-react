@@ -31,10 +31,6 @@ nav {
                 transition: .2s;
             }
         }
-
-        .active {
-            background-color: $secondary-color;
-        }
     }
 
     @media (min-width: 756px) {

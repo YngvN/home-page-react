@@ -3,10 +3,11 @@ html {
 }
 
 body {
-    height: 100%;
+    max-height: 100vh;
     font-family: system-ui;
     font-size: 1.125rem;
     line-height: 1.5;
+
 }
 
 img,

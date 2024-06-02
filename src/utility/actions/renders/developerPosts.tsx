@@ -60,7 +60,7 @@ const DeveloperPosts: React.FC<DeveloperPostsProps> = ({ posts }) => {
                 return (
                     <div
                         key={post.id}
-                        className="project-container"
+                        className="project-container container"
                     >
                         <div className='project-description column project-child'>
                             <h2 className="project-title">{post.title.rendered}</h2>

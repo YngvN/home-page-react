@@ -7,7 +7,7 @@ const Music: React.FC = () => {
     return (
         <div>
             <h1 className='page-title'>Music</h1>
-            <div className="music">
+            <div className="music container">
                 <FetchPosts categoryFilter={categoryFilter} type="music" />
             </div>
         </div>

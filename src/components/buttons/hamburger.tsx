@@ -16,3 +16,5 @@ function Hamburger({ isOpen }: HamburgerProps) {
 }
 
 export default Hamburger;
+
+

@@ -1,8 +1,9 @@
-$primary-color: #ade9fd;
-$secondary-color: #c0c5ff;
+$primary-color: #3D518C;
+$secondary-color: #226F54;
 
 $white: #ffffff;
 $black: #000000;
+$grey: #808080;
 
 $lighten: 5;
 $darken: 25;
@@ -17,7 +18,8 @@ $colors-light: (
     color-1: #e1e1e1,
     color-2: #f2f2f2,
     background: $white,
-    contrast: $black
+    contrast: $black,
+    shadow: #8585857c
 );
 
 $colors-dark: (
@@ -30,7 +32,8 @@ $colors-dark: (
     color-1: #181818,
     color-2: #121212,
     background: $black,
-    contrast: $white
+    contrast: $white,
+    shadow: #cfcfcf72
 );
 
 // .theme-primary {
@@ -41,9 +44,6 @@ $colors-dark: (
 //     background-color: $secondary-color;
 // }
 
-.contrast {
-    color: map-get($colors-light, contrast);
-}
 
 .theme-primary,
 .theme-secondary,
@@ -55,6 +55,7 @@ $colors-dark: (
 
     .btn-primary {
         background-color: map-get(map-get($theme-colors, primary), base);
+        color: $white;
 
         &:hover {
             background-color: map-get(map-get($theme-colors, primary), darken);
@@ -103,6 +104,10 @@ $colors-dark: (
         background-color: map-get($theme-colors, background);
     }
 
+    .container {
+        background-color: map-get($theme-colors, color-1);
+    }
+
     h1,
     h2,
     h3,
@@ -124,6 +129,16 @@ $colors-dark: (
                 background-color: map-get($theme-colors, color-1);
                 color: map-get($theme-colors, contrast);
 
+            }
+        }
+
+        .active {
+            background-color: map-get($theme-colors, background);
+            color: map-get($theme-colors, contrast);
+
+            &:hover {
+                background-color: map-get($theme-colors, background);
+                color: map-get($theme-colors, contrast);
             }
         }
     }
