@@ -1,6 +1,6 @@
 # My homepage
 
-A work in progress home page based on React
+A work in progress home page based on React.
 
 ## Description
 
