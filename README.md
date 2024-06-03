@@ -5,7 +5,7 @@ A work in progress home page based on React
 ## Description
 
 I wanted to experiment with some of the stuff I've learned through my studies.
-I've also tried to implement some more animations on the the background, among other places.
+I've also tried to implement some more animations on the the background, among other places. It uses CMS to get new projects that I publish in Wordpress.
 
 ## Built With
 
