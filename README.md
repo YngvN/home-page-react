@@ -9,7 +9,6 @@ I've also tried to implement some more animations on the the background, among o
 
 ## Built With
 
-You can list a the tech stack that you've used over here
 
 - [React.js](https://reactjs.org/)
 - [Bootstrap](https://getbootstrap.com)
