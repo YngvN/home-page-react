@@ -46,7 +46,7 @@ function Home() {
                             </a>
                         </div>
                     </li>
-                    <li className="column scroll-list-item container">
+                    {/* <li className="column scroll-list-item container">
                         <h2>Music</h2>
                         <p>As a musician I've got most of my experience with vocals, guitar, and piano.</p>
                         <p>I'm also an amateur music producer using Logic Pro</p>
@@ -57,7 +57,7 @@ function Home() {
                         <p>I'm a Noroff student learning front end development.</p>
                         <p>But I've also gone to university learning much back end, mostly using SQL and C#</p>
                         <a className="btn-primary btn" href="/developer">Check out some of my work here</a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

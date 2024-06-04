@@ -12,14 +12,14 @@
         .developer-links {
             display: flex;
             min-width: 200px;
-            border-radius: 20px;
             overflow: hidden;
+            height: 100%;
 
             .project-image {
-                width: 80%;
-                height: 100%;
+                width: 200%;
+                height: 200%;
                 transition: 0.2s;
-                object-fit: contain;
+                object-fit: cover;
                 z-index: 1;
 
                 &:hover {
