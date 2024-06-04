@@ -1,6 +1,6 @@
 # My homepage
 
-A work in progress homepage based on React.
+A work in progress homepage based on mostly React.
 
 [Link to page](https://home.nykas.me/)
 
